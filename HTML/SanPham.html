@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySelf</title>
+    <link rel="stylesheet" href="SanPham.css">
+    <link rel="stylesheet" href="../Fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <div class="header">
+        <ul class="header-left">
+            <li class="header-item"><img src="../Images/logo.webp" alt=""></li>
+            <li class="header-item2">
+                <span class="name">Jin's BookShop</span>
+                <span class="slogan">Read to Learn</span>
+            </li>           
+        </ul>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="header-right">
+            <div class="nav-item"><li><a href="index.html">Trang Chủ</a></li></div>
+            <div class="nav-item"><li><a href="MySelf.html">Bản Thân</a></li></div>
+            <div class="nav-item"><li><a href="SanPham.html" class="item1">Sản Phẩm</a></li></div>
+            <div class="nav-item"><li><a href="Contact.html">Liên hệ</a></li></div>
+        </ul>
+    </div>
+    <div class="comment">
+        <div class="comment-item">
+            <div class="comment-top">
+                <img src="../Images/tup-lieu-bac-tom.webp" alt="Túp Lều Bác Tôm">
+            </div>        
+            <div class="comment-bottom">
+                <p>Khi đọc cuốn sách này, bản thân bạn sẽ như bị cuốn sâu vào một câu truyện đầy nhân văn, đồng cảm với những người da đen với số phận đau khổ, trôi dạt như bác Tom. Đồng thời, tác phẩm cũng lên án những người xấu xa như bà Marie, tên chủ đồn điền Leegree… Xuyên suốt câu chuyện, trong những nơi bác Tom đi qua, không một nơi nào cho bác một cuộc sống hoàn toàn yên bình. Khi được ông chủ Augustine mua về và sắp được thả tự do thì lại có biến cố và đẩy bác Tom vào vòng đau khố để rồi phải chết để bảo vệ danh dự.</p>
+                <p>Ngoài bác Tom, tác giả còn lồng ghép vào ấy những con người nô lệ như bác Tom, bị đánh đập đến chết mà không chút xót thương… Thêm vào đó còn có cô bé Eva hay cô Ophelia đại diện cho những người có tư tưởng tiến bộ, đồng cảm với người nô lệ, như đốm sáng giữa cuộc đời của họ.</p>
+                <p>Với cốt truyện logic, đặc sắc, Túp Lều Bác Tôm đã lên án một cách mạnh mẽ chế độ nô lệ khốc liệt một cách trần trụi và chân thật nhất đến với người đọc. Đây chính là điểm mấu chốt làm nên thành công cho tác phẩm kinh điển này!</p>
+            </div>
+        </div>
+    </div>
+    <button class="popup">Mua ngay</button>
+    <div class="cover hide">
+        <div class="buy-card">
+            <div class="buy-card-top"><i class="fa-solid fa-x"></i></div>
+            <div class="buy-card-mid">
+                <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+                    <table class="tb1">
+                        <tr>
+                            <td>Thông tin mua hàng</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr1">
+                            <td>Sản phẩm</td>
+                            <td>Đơn giá</td>
+                            <td>Số lượng</td>
+                            <td>Thành tiền</td>
+                        </tr>
+                        <tr>
+                            <td>Túp Lều Bác Tôm</td>
+                            <td><input type="number" id="a" value="80000" min="80000" max="80000"></td>
+                            <td>
+                                <input type="number" id="b" min="1" max="10" value="1">
+                            </td>
+                            <td><output name="x" for="a*b">80000</output></td>
+                        </tr>
+                    </table>
+                    <table class="tb2">
+                        <tr>
+                            <td>Thông tin người mua</td>
+                            <td></td>                            
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Họ và tên"></td>
+                            <td><input type="tel" placeholder="Số điện thoại"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea name="" id="" cols="45.5" rows="5" placeholder="Địa chỉ cụ thể"></textarea></td>                            
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="buy-card-bottom">
+                <button>Mua hàng</button>
+            </div>
+        </div>
+    </div>
+    <div class="cover1 hide1">
+        <div class="buy-success">
+            <p>Mua thành công!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h3 class="mylogo">Jin's BookShop</h3>
+        <p class="myslogan">Hãy tìm kiếm bản thân thông qua từng con chữ</p>
+        <h4 class="contactme">Ghé thăm tôi</h4>
+        <ul class="iconf">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-solid fa-podcast"></i></li>
+        </ul>
+        <div class="designed">Copyright &copy;2023 &#8226; Designed by Trọng Nhân</div>
+    </div>
+    <script src="FORM.js"></script>
+</body>
+</html>

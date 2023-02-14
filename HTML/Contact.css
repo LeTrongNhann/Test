@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:wght@400;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0e1b30;
+}
+
+.ani{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;    
+}
+
+.dom{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    margin-top: 120px;
+}
+
+.dom span{
+    margin: 0 4px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgb(91, 217, 248);
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(91, 217, 248, 0.336),
+    0 0 50px rgba(91, 217, 248, 0.336),
+    0 0 100px rgba(91, 217, 248, 0.699);
+    animation: animate 10s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.dom span:nth-child(even){
+    background: rgb(255, 91, 91);
+    box-shadow: 0 0 0 10px rgba(255, 91, 91, 0.288),
+    0 0 50px rgba(255, 91, 91, 0.288),
+    0 0 100px rgba(255, 91, 91, 0.76);
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(95vh) scale(0);
+    }
+    100%{
+        transform: translateY(-5vh) scale(1);
+    }
+}
+
+.nav-item .item1{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+
+}
+
+.header{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgb(48, 41, 41);
+    position: fixed;
+    z-index: 10;
+}
+
+.header-item{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.header-item2{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.header-right{
+    display: inline-block;
+    justify-content: space-between;
+    max-width: 65%;
+    height: 120px;
+ 
+}
+
+.nav-item{
+    display: inline-block;
+    justify-content: space-around;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.name{
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.slogan{
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    margin: 7px 7px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    color: white;
+    padding: 7px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.footer{
+    height: auto;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.mylogo{
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+.myslogan{
+    padding: 5px 0px;
+}
+.iconf{
+    display: flex;
+    justify-content: center;
+}
+
+.iconf li {
+    padding: 7px;
+    font-size: 1.5em;
+}
+
+.designed{
+    padding-bottom: 20px;
+}
+
+.form{
+    position: relative;
+    top: -70vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /*justify-content: space-around;*/
+    background-color: rgba(20, 19, 19, 0.527);
+    max-width: 550px;
+    min-height: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgba(247, 247, 99, 0.76);
+}
+
+.form-left{
+    background-color: rgba(247, 247, 99, 0.76);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 15px 15px -25px;
+    max-width: 250px;
+}
+
+.form-left-top{
+    padding: 10px 0;
+}
+
+.form-left-mid{
+    padding-bottom: 10px;
+}
+
+.form-left-bottom{
+    padding-bottom: 10px;
+}
+
+.form-right{
+    margin-left: auto;
+}
+
+.form-right form table tr td{
+    text-align: left;
+}
+
+form{
+    padding: 25px;
+    text-align: right;
+}
+
+button{
+    max-width: 120px;
+    min-height: 30px;
+    padding: 7px;
+    background-color: rgb(255, 106, 106);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white ;
+    cursor: pointer;
+
+}
+
+.iconf li i{
+    cursor: pointer;
+}
+
+.check-button{
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 1235px){
+    .name{
+        font-size: 27px;
+    }
+
+    .slogan{
+        font-size: 15px;
+    }        
+}
+
+@media (max-width: 1080px) {
+    .header{
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    .header-right{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.801);
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        top: 110px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    .header-left{
+        float: left;
+        margin: 0;
+        max-width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-item2{
+        min-width: 200px;
+        float: inline-end;
+    }
+
+    .nav-item{
+        display: block;
+    }
+
+    .name{
+        font-size: 27px;
+    }
+
+    .check-button{
+        display: block;
+    }
+
+    #check:checked ~ .header-right{
+        left: 0;
+    }
+
+    .item{
+        width: calc(50% - 30px);
+    }
+
+    .item-bottom{
+        margin-top: auto;
+    }
+}

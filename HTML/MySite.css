@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&family=Playfair+Display:wght@400;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0e1b30;
+}
+
+.nav-item .item1{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+}
+
+.header{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgb(48, 41, 41);
+    position: fixed;
+}
+
+.header-item{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.header-item2{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.header-right{
+    display: inline-block;
+    justify-content: space-between;
+    max-width: 65%;
+    height: 120px;
+ 
+}
+
+.nav-item{
+    display: inline-block;
+    justify-content: space-around;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.name{
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.slogan{
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.img-header{
+    margin: 7px 7px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    color: white;
+    padding: 7px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.main{
+    padding-top: 120px;
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 145px 50px 50px 50px;
+    margin-left: -30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.item{
+    background-color: antiquewhite;
+    overflow: hidden;
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;    
+}
+
+.linkhover{
+    margin: 0px;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.item-bottom{
+    text-align: right;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.footer{
+    height: auto;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.7em;
+    position: relative;
+    z-index: 10;
+}
+
+.mylogo{
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+.myslogan{
+    padding: 5px 0px;
+}
+.iconf{
+    display: flex;
+    justify-content: center;
+}
+
+.iconf li {
+    padding: 7px;
+    font-size: 1.5em;
+}
+
+.designed{
+    padding-bottom: 20px;
+}
+
+i{
+    cursor: pointer;
+}
+
+.check-button{
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 1235px){
+    .name{
+        font-size: 27px;
+    }
+
+    .slogan{
+        font-size: 15px;
+    }        
+}
+
+@media (max-width: 1080px) {
+    .header{
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    .header-right{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.801);
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        top: 110px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    .header-left{
+        float: left;
+        margin: 0;
+        max-width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-item2{
+        min-width: 200px;
+        float: inline-end;
+    }
+
+    .nav-item{
+        display: block;
+    }
+
+    .name{
+        font-size: 27px;
+    }
+
+    .check-button{
+        display: block;
+    }
+
+    #check:checked ~ .header-right{
+        left: 0;
+    }
+
+    .item{
+        width: calc(50% - 30px);
+    }
+
+    .item-bottom{
+        margin-top: auto;
+    }
+}
